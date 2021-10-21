@@ -1,5 +1,17 @@
-const { hello } = require("./variables");
+const { 
+  welcome,
+  name,
+  value
+ } = require("./variables");
 
-test("hello world", () => {
-  expect(hello).toEqual("hello world");
+test("welcome", () => {
+  expect(welcome).toEqual("Hello world");
+});
+
+test("name", () => {
+  expect(typeof name).toEqual("string");
+});
+
+test("value", () => {
+  expect(value).toEqual("Hardy");
 });
