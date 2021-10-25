@@ -24,6 +24,5 @@ const value =
 module.exports = { 
   welcome,
   name,
-  value,
-  
+  value
  }
