@@ -1,19 +1,22 @@
 //  -- if --
 // Write a function `isAMatch` that checks two values for strict equality. 
-// If the two values match, the string 'Match' should be returned. 
-// If they are not a match, you should get 'Not a match'.
-// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
+// If the two values match, the string 'Match' should be returned.
+// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) won't return.
 
 function isAMatch (one, two) {
   if (one === two) {
     return 'Match'
   }
-  return 'Not a match'
 }
 
 //  -- if, else --
+// Write a function `isAMatch` that checks two values for strict equality. 
+// If the two values match, the string 'Match' should be returned. 
+// If they are not a match, you should get 'Not a match'.
+// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
 
-function something (one, two) {
+
+function isAMatch (one, two) {
   if (one === two) {
     return 'Match'
   } else {
@@ -22,20 +25,37 @@ function something (one, two) {
 }
 
 //  -- if, else if, else --
+// Write a function `greetings` that takes a string. 
+// If the string strictly equals 'Te Reo' the string 'Kia ora' should be returned. 
+// If the string strictly equals 'English' the string 'Hello' should be returned. 
+// Otherwise return a '👋'
+// Example: greetings('Te reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
 
-function something (one, two, three) {
-  if (one === two) {
-    return 'something'
-  } else if ( one === three) {
-    return 'something else'
-  } else return 'some thing'
+function greetings (str) {
+  if (str === 'Te Reo') {
+    return 'Kia ora'
+  } else if (str === 'English') {
+    return 'Hello'
+  } else return '👋'
 }
 
 //  -- turnary  --
-// Write a function `getFee` that checks if isMember is truthy.
-// Example: getFee(true) should return the member fee '$2.00'
-// Example: getFee(false) should return the non member fee'$10.00'.
+// Write a function `isSignedIn` that checks if isMember is truthy.
+// Example: isSignedIn(true) should return the value 'Log out'.
+// Example: isSignedIn(false) should return the value 'Sign in'.
 
-function getFee(isMember) {
-  return (isMember ? '$2.00' : '$10.00');
+function isSignedIn(isSignedIn) {
+  return (isSignedIn ? 'Log out' : 'Sign in');
 }
+
+// ------------ CHECKS -----------
+// The below line of code lets us test it to see how you're doing,
+// don't worry about this yet you'll learn it in bootcamp. 
+
+// Don't change any code below this comment!
+module.exports = { 
+  isAMatch,
+  getFirst,
+  greetings,
+  isSignedIn
+ }

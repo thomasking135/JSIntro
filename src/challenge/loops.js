@@ -15,3 +15,10 @@ for (let i = 0; i < 3; i++) {
     sum = sum + a[i][j];
   }
 }
+
+// ------------ CHECKS -----------
+// The below line of code lets us test it to see how you're doing,
+// don't worry about this yet you'll learn it in bootcamp. 
+
+// Don't change any code below this comment!
+module.exports = {}
