@@ -1,4 +1,4 @@
-// Assign a variable called `welcome` the value 'Hello world'
+// Declare a variable called `welcome`, assign the value 'Hello world'
 
 
 // Reassign the variable `name` to have the value of your name.   [maybe start as a const? they have to make it a let?]

@@ -1,5 +1,19 @@
 // ----- Logical Operators -----
 
+
+//  -- + plus --
+
+//  -- - minus --
+
+//  -- * multiply --
+
+//  -- / divide --
+
+//  -- ++ increment --
+
+//  -- -- decrememnt --
+
+
 //  -- && and --
 // Write a function `isSame` that takes two booleans as parameters.
 // return the first and second parameters.
