@@ -1,37 +1,27 @@
 // -- return arr -- 
-// Write a function `toArray` that takes 2 values and returns these values in an array.
-// Example: toArray(5, 9) should return the array [5, 9].
-
-function toArray(a, b) {
-  return [a, b]
-}
+// Define an array `shoppingList`. This array should contain:
+// Three strings that are fruit. 'Kiwifruit', 'Mangosteen', 'Longan' .
+const shoppingList = ['Kiwifruit', 'Mangosteen', 'Longan' ]
 
 //  -- get arr elements --
-// Write a function `getFirst` that takes an array and returns the first value in the array.
-// Example: getFirst(['Brave', 'Chrome', 'Firefox']) returns 'Brave'
-
-function getFirst(arr) {
-  return arr[0]
-}
+// Assign the variable `treeResult` with the code that accesses the first value from the array `trees`.
+// Example: The code should work even if you change the values in the array. It should always retrieve the first element.
+const trees = ['Kahikatea', 'Cherry Blossom', 'Paogo']
+// Write your code below this comment
+const treeResult = trees[0]
 
 //  -- set arr elements --
-// Write a function `setFavouriteAsFirst` that takes an array and a variable.
-// The variable should be inserted as the first element in the array. The array should be returned.
-// Example: setFavouriteAsFirst(['Chrome', 'Firefox'], 'Brave') should return ['Brave', 'Firefox'].
+// Write some code that will reassign the value of the first element in the array `favouriteBrowsers` with the string 'Brave'.
+const favouriteBrowsers = ['Chrome', 'Firefox']
+// Write your code below this comment
+favouriteBrowsers[0] = 'Brave'
 
-function setFavouriteAsFirst (arr, fave) {
-  arr[0] = fave
-  return arr
-}
 
 // -- arr length --
-// Write a function `getLeastFavourite` that uses `.length`to return the last element in the array.
-// Example: getLeastFavourite(['Brave', 'Chrome', 'Firefox']) should return 'Firefox'.
-
-function getLeastFavourite (arr) {
-  const last = arr.length - 1
-  return arr[last]
-}
+// Write some code that gets the length of the array `names` and set that code to be the value of  the variable `arrLength`
+const names = ['Yuko', 'Amanda', 'Kahu']
+// Write your code below this comment
+const arrLength = names.length
 
 
 // ------------ CHECKS -----------
@@ -40,8 +30,8 @@ function getLeastFavourite (arr) {
 
 // Don't change any code below this comment!
 module.exports = { 
-  toArray,
-  getFirst,
-  setFavouriteAsFirst,
-  getLeastFavourite
+  shoppingList,
+  treeResult,
+  favouriteBrowsers,
+  arrLength
  }
