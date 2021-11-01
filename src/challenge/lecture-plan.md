@@ -118,7 +118,7 @@ Comparison Operators:
 ### Demonstrate:
 - Simple if:
 ```js
-function isAMatch (one, two) {
+function isMatch (one, two) {
   if (one === two) {
     return 'Match'
   }

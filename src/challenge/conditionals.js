@@ -1,9 +1,9 @@
 //  -- if --
-// Write a function `isAMatch` that checks two values for strict equality. 
+// Write a function `isMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) won't return.
 
-function isAMatch (one, two) {
+function isMatch (one, two) {
   if (one === two) {
     return 'Match'
   }
@@ -54,8 +54,8 @@ function isSignedIn(isSignedIn) {
 
 // Don't change any code below this comment!
 module.exports = { 
+  isMatch,
   isAMatch,
-  getFirst,
   greetings,
   isSignedIn
  }

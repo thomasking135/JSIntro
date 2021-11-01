@@ -1,10 +1,13 @@
 //  -- for loop --
-function addTo(n) {
-  let sum = 0;
-  for (let i = 0; i <= n; i++) {
-    sum = sum + i;
+// Write a function `logNames` that takes an array as a parameter. 
+// It should loop for the length of the array and console.log the current position. 
+// logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each persons name. 4 names in total.
+// logNames(['Arnav', 'Akira']) would console.log each persons name. 2 names in total.
+
+function logNames(names) {
+  for (let i = 0; i <= names.length; i++) {
+    console.log(names[i])
   }
-  return sum;
 }
 
 //  -- nested loop? --
@@ -21,4 +24,7 @@ for (let i = 0; i < 3; i++) {
 // don't worry about this yet you'll learn it in bootcamp. 
 
 // Don't change any code below this comment!
-module.exports = {}
+module.exports = {
+  logNames,
+  
+}
