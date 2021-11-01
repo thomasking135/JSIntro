@@ -1,0 +1,7 @@
+.tick {
+  background-color: green;
+}
+.cross {
+  border: 1px solid red;
+  background-color: red;
+}
