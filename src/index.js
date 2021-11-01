@@ -6,31 +6,15 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function buildResults() {
+  let variableResults = resultsForVariables(variableAnswers);
   let output = "<h1>Results</h1>";
-  output += buildResultsForVariables(variableAnswers);
+  output += formatResultsSection("Variables", variableResults);
   return output;
 }
 
-function buildResultsForVariables({ welcome, name, value }) {
-  let results = [
-    {
-      correct: welcome === "Hello world",
-      response: welcome,
-      tip: welcome !== undefined ? "tip goes here" : "",
-    },
-    {
-      correct: typeof name === "string" && name != "Old Name",
-      response: name,
-      tip: name !== "Old Name" ? "tip goes here" : "",
-    },
-    {
-      correct: value === "Hardy",
-      response: value,
-      tip: value !== undefined ? "Nearly, try reading through it again" : "",
-    },
-  ];
+function formatResultsSection(title, results) {
   let output = `<div class='results'>
-    <h2>Variables</h2>
+    <h2>${title}</h2>
     <ol>
     ${formatResults(results)}
     </ol>
@@ -49,10 +33,22 @@ function formatResult({ correct, response, tip }) {
     </li>`;
 }
 
-// show section function
-//
-// create feedback object for each question
-// feedback types
-//   variables
-//   function
-//   multi choice?
+function resultsForVariables({ welcome, name, value }) {
+  return (results = [
+    {
+      correct: welcome === "Hello world",
+      response: welcome,
+      tip: welcome !== undefined ? "tip goes here" : "",
+    },
+    {
+      correct: typeof name === "string" && name != "Old Name",
+      response: name,
+      tip: name !== "Old Name" ? "tip goes here" : "",
+    },
+    {
+      correct: value === "Hardy",
+      response: value,
+      tip: value !== undefined ? "Nearly, try reading through it again" : "",
+    },
+  ]);
+}
