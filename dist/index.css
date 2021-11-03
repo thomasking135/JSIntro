@@ -1,7 +1,26 @@
-.tick {
-  background-color: green;
+ol li{
+  font-size:1em;
 }
+
+.tick{
+  background-color: #d9ead3;
+  width: 220px;
+}
+.tick:after {
+  content: '\2713';
+  display: inline-block;
+  color: green;
+  padding: 0 6px 0 0;
+}
+
 .cross {
-  border: 1px solid red;
-  background-color: red;
+  background-color: #f4cccc;
+  width: 220px;
+}
+
+.cross:after{
+  content: ' ➜ not passing yet';
+  display: inline-block;
+  color: red;
+  padding: 0 6px 0 0;
 }
