@@ -11,17 +11,18 @@ This is a very basic lecture plan to demonstrate each of the things the students
 ### Demonstrate:
 - How to declare a variable
   - Helps to note difference between `let` and `const`
+  - Talk about how everything used to be `var` in older versions of Javascript- now we use let and const instead
 - What can the value of a variable be? (String, Boolean, Integer, Array etc)
 - Reassign a variable
 - The value of a variable can be have the value of another variable: 
   - Note that if you change `a` it doesn't change `b`, why?
 
 ```js
-let a = 'Laurel';
-let b = 'Hardy';
-let c = b;
-b = a;
-a = c;
+let nameOne = 'Laurel';
+let nameTwo = 'Hardy';
+let nameThree = nameTwo;
+nameTwo = nameOne;
+nameOne = NameThree;
 ```
 
 ## Functions
@@ -54,6 +55,7 @@ function hi(name) {
 - What can the values of an objects key: value pair be? (String, object, array etc) 
 - Access an item in the object
 - Reassign the value in an object
+- Dot VS Square bracket notation- Brief overview, for more information see the full video I made on the topic
 
 ## Arrays
 ### Chat about:
@@ -69,6 +71,7 @@ function hi(name) {
 - Access an item in the array
 - - Reassign the value in an array
 - Show array.length
+- Delete an item from an array
 
 
 ## Loops
@@ -80,6 +83,24 @@ function hi(name) {
 - Creating a loop
 - Accessing current position
 - Nested loops
+
+## Conditionals
+### Chat about:
+- What are conditionals?
+- Why do we use them?
+
+### Demonstrate:
+- Simple if:
+```js
+function isMatch (one, two) {
+  if (one === two) {
+    return 'Match'
+  }
+}
+```
+- if/else
+- if/else if/else
+- Advanced: Turnary (`? :`)
 
 ## Operators
 ### Chat about:
@@ -110,24 +131,5 @@ Comparison Operators:
 - `<=` less than or equal to
 
 
-## Conditionals
-### Chat about:
-- What are conditionals?
-- Why do we use them?
-
-### Demonstrate:
-- Simple if:
-```js
-function isMatch (one, two) {
-  if (one === two) {
-    return 'Match'
-  }
-}
-```
-
-- if/else
-- if/else if/else
-- Advanced: Turnary (`? :`)
-
 ## Note
-* All of these examples will match examples we will get stdents to define/call or figure out the returned value of. 
+* All of these examples will match examples we will get students to define/call or figure out the returned value of. 
