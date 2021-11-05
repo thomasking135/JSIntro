@@ -39,7 +39,7 @@ function greetings (str) {
   } else return '👋'
 }
 
-//  -- turnary  --
+//  -- ternary  --
 // Write a function `isSignedIn` that checks if isMember is truthy.
 // Example: isSignedIn(true) should return the value 'Log out'.
 // Example: isSignedIn(false) should return the value 'Sign in'.
@@ -50,7 +50,7 @@ function isSignedIn(isSignedIn) {
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
-// don't worry about this yet you'll learn it in bootcamp. 
+// don't worry about this yet you'll learn it in Bootcamp. 
 
 // Don't change any code below this comment!
 module.exports = { 
