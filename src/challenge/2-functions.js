@@ -1,8 +1,11 @@
 // ------------ FUNCTIONS -----------
-// return the string 'Hello world!' from the hello function
-function hello() {}
 
-// Define two functions.
+// 1. return the string 'Hello world!' from the hello function
+function hello() {
+  return 'Hello world!'
+}
+
+// 2. + 3. Define two functions.
 //The first function `sayHi` should return 'Hello!' and the second function `sayBye` should return 'Goodbye!'.
 function sayHi() {
   return 'Hello!'
@@ -12,15 +15,15 @@ function sayBye() {
   return 'Goodbye!'
 }
 
-// Define a function `greet` that returns 'Hey there!'
+// 4. Define a function `greet` that returns 'Hey there!'
 // Then declare a variable `salutation` and call the function `greet`, set the result of the function to the variable.
 function greet() {
   return 'Hey there!'
 }
 const salutation = greet()
 
-//What value does `helloResult` have?
-function Hi() {
+// 5. What value does `helloResult` have?
+function hi() {
   return 'Hi!'
 }
 
@@ -29,28 +32,29 @@ let helloResult = hi()
 const helloResultIs = 'Hi!'
 
 // ---------- FUNCTIONS WITH PARAMETERS ---------
-// Write a function `shout` that also returns the passed parameter.
+
+// 6. Write a function `shout` that also returns the passed parameter.
 // Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
 function shout(word) {
   return word
 }
 
-// Which value does `replyResult` have after execution of the following code?
+// 7. Which value does `replyResult` have after execution of the following code?
 function reply(phrase) {
   return phrase
 }
 
 let replyResult = reply('Good morning')
 // Un comment and assign your answer to the variable `ReplyResultIs`.
-const ReplyResultIs = 'Hi!'
+const replyResultIs = 'Good morning'
 
-// Write a function 'helloFriend` to greet a person by name, using a parameter.
+// 8. Write a function 'helloFriend` to greet a person by name, using a parameter.
 // Calling helloFriend('Emily') should return 'Hello Emily!'
 function helloFriend(name) {
   return 'Hello ' + name + '!'
 }
 
-// Which value does `goodMorningResult` have after execution of the following code?
+// 9. Which value does `goodMorningResult` have after execution of the following code?
 function goodMorning(name) {
   return 'Good morning ' + name + '!'
 }
@@ -59,7 +63,7 @@ let goodMorningResult = goodMorning('Jacky')
 // Un comment and assign your answer to the variable `goodMorningResultIs`.
 const goodMorningResultIs = 'Good morning Jacky!'
 
-// Which value does `hiResult` have after execution of the following code?
+// 10. Which value does `hiResult` have after execution of the following code?
 function hi(name) {
   return 'Hi ' + name + '!'
 }
@@ -71,9 +75,9 @@ let hiResult = hi1 + ' ' + hi2
 // Un comment and assign your answer to the variable `hiResultIs`.
 const hiResultIs = 'Hi Andy! Hi Hamish!'
 
-// Write a function `alert` that takes a string and returns this string duplicated. In addition, the return should be logged.
+// 11. Write a function `alert` that takes a string and returns this string duplicated. In addition, the return should be logged.
 function alert(str) {
-  const alerting = str + str
+  const alerting = str + ' ' + str
   console.log(alerting)
   return alerting
 }
@@ -86,15 +90,16 @@ function alert(str) {
 const toExport = {
   hello,
   greet,
-  salutation,
-  helloResultIs,
   shout,
-  ReplyResultIs,
+  reply,
   helloFriend,
-  goodMorningResultIs,
-  hiResultIs,
-  alert,
+  goodMorning,
+  alert
 }
 if (typeof sayHi !== 'undefined') toExport.sayHi = sayHi
 if (typeof sayBye !== 'undefined') toExport.sayBye = sayBye
+if (typeof helloResultIs !== 'undefined') toExport.helloResultIs = helloResultIs
+if (typeof replyResultIs !== 'undefined') toExport.replyResultIs = replyResultIs
+if (typeof goodMorningResultIs !== 'undefined') toExport.goodMorningResultIs = goodMorningResultIs
+if (typeof hiResultIs !== 'undefined') toExport.hiResultIs = hiResultIs
 module.exports = toExport

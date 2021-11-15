@@ -3,8 +3,7 @@
 // It should loop for the length of the array and console.log the current position. 
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
 // logNames(['Arnav', 'Akira']) would console.log each person's name. 2 names in total.
-
-function logNames(names) {
+function logNames (names) {
   for (let i = 0; i <= names.length; i++) {
     console.log(names[i])
   }
@@ -24,7 +23,9 @@ for (let i = 0; i < 3; i++) {
 // don't worry about this yet you'll learn it in Bootcamp. 
 
 // Don't change any code below this comment!
-module.exports = {
-  logNames,
+const toExport = {
   
 }
+if (typeof logNames !== 'undefined') toExport.logNames = logNames
+module.exports = toExport
+

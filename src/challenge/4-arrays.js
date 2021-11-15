@@ -1,7 +1,7 @@
 // -- return arr -- 
 // Define an array `shoppingList`. This array should contain:
 // Three strings that are fruit. 'Kiwifruit', 'Mangosteen', 'Longan' .
-const shoppingList = ['Kiwifruit', 'Mangosteen', 'Longan' ]
+const shoppingList = [ 'Kiwifruit', 'Mangosteen', 'Longan' ]
 
 //  -- get arr elements --
 // Assign the variable `treeResult` with the code that accesses the first value from the array `trees`.
@@ -23,15 +23,16 @@ const names = ['Yuko', 'Amanda', 'Kahu']
 // Write your code below this comment
 const arrLength = names.length
 
-
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
-// don't worry about this yet you'll learn it in bootcamp. 
+// don't worry about this yet you'll learn it in bootcamp.
 
 // Don't change any code below this comment!
-module.exports = { 
-  shoppingList,
-  treeResult,
+const toExport = {
   favouriteBrowsers,
-  arrLength
- }
+  names
+}
+if (typeof shoppingList !== 'undefined') toExport.shoppingList = shoppingList
+if (typeof treeResult !== 'undefined') toExport.treeResult = treeResult
+if (typeof arrLength !== 'undefined') toExport.arrLength = arrLength
+module.exports = toExport

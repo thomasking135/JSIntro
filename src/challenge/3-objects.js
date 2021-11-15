@@ -1,5 +1,5 @@
 // Define an object `contact`. This object should contain:
-// The property `name` and the value 'Leo Smith'.
+// The property `name` and the value 'Leon Kim'.
 // The property `address` and the value '123 Main St'.
 // The property `phone` and the value '021 555 555'.
 
@@ -10,6 +10,7 @@ const contact = {
 }
 
 // From the object `receipt` access the name property and set that as the value of 'customer'.
+// Make sure you access the objects property, do not just type the string name.
 const receipt = {
   price: 89.99,
   store: 'Ariels Diner',
@@ -18,22 +19,24 @@ const receipt = {
 
 const customer = receipt.name
 
-// Access the `name` property in the `person` object and reassign the value of property `name` to be 'Navita'.
+// Access the `name` property in the `person` object and reassign the value of property `name` to be a different name (Perhaps your name?).
 const person = {
-  name: 'Arnav',
+  name: 'Navita',
   age: '28',
   eyeColor: 'brown'
 }
 
-person.name = 'Navita'
+person.name = 'Arnav'
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
-// don't worry about this yet you'll learn it in bootcamp. 
+// don't worry about this yet you'll learn it in bootcamp.
 
 // Don't change any code below this comment!
-module.exports = {
-  contact,
-  customer,
-  person
+const toExport = {
+  person,
+  receipt
 }
+if (typeof contact !== 'undefined') toExport.contact = contact
+if (typeof customer !== 'undefined') toExport.customer = customer
+module.exports = toExport

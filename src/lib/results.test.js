@@ -16,7 +16,7 @@ describe("1. resultsForVariables", () => {
     expect(result.correct).toBe(true);
   });
   it("3. picks correct value", () => {
-    let result = resultsForVariables({ value: "Hardy" })[2];
+    let result = resultsForVariables({ value: "Marama" })[2];
     expect(result.correct).toBe(true);
   });
 });

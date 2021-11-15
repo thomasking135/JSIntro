@@ -2,15 +2,16 @@
 const welcome = 'Hello world'
 // 2. Reassign the variable `name` to have the value of your name.   [maybe start as a const? they have to make it a let?]
 let name = 'Old Name'
+name = 'Emily'
 
 // 3. Which value does `a` have after execution of the following code?
-let nameOne = 'Laurel'
-let nameTwo = 'Hardy'
+let nameOne = 'Marama'
+let nameTwo = 'Wiremu'
 let nameThree = nameTwo
 nameTwo = nameOne
 nameOne = nameThree
 // Uncomment the following line and assign your answer to the variable `value`.
-// const value =
+const value = 'Marama'
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
