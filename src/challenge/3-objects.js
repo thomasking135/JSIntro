@@ -3,11 +3,6 @@
 // The property `address` and the value '123 Main St'.
 // The property `phone` and the value '021 555 555'.
 
-const contact = {
-  name: 'Leon Kim',
-  address: '123 Main St',
-  phone: '021 555 555'
-}
 
 // From the object `receipt` access the name property and set that as the value of 'customer'.
 // Make sure you access the objects property, do not just type the string name.
@@ -17,16 +12,14 @@ const receipt = {
   name: 'Marta'
 }
 
-const customer = receipt.name
+//const customer = 
 
-// Access the `name` property in the `person` object and reassign the value of property `name` to be a different name (Perhaps your name?).
+// Access the `name` property in the `person` object and reassign the value to be a different name (Perhaps your name?).
 const person = {
   name: 'Navita',
   age: '28',
   eyeColor: 'brown'
 }
-
-person.name = 'Arnav'
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
