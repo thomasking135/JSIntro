@@ -20,7 +20,9 @@ function buildFunctionResult (fn, inputs, expected) {
   } catch (e) {
     tip = e
   }
-  console.log(actual, expected)
+  if (actual !== expected) {
+    tip = `Expected: ${expected}`
+  }
   return {
     correct: actual === expected,
     response: actual,

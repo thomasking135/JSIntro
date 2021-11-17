@@ -6,13 +6,6 @@ function hello() {
 
 // 2. + 3. Define two functions.
 //The first function `sayHi` should return 'Hello!' and the second function `sayBye` should return 'Goodbye!'.
-function sayHi() {
-  return 'Hello!'
-}
-
-function sayBye() {
-  return 'Goodbye!'
-}
 
 // 4. Define a function `greet` that returns 'Hey there!'
 // Then declare a variable `salutation` and call the function `greet`, set the result of the function to the variable.
@@ -28,15 +21,13 @@ function hi() {
 
 let helloResult = hi()
 // Un comment and assign your answer to the variable `helloResultIs`.
-const helloResultIs = 'Hi!'
+// const helloResultIs = 
 
 // ---------- FUNCTIONS WITH PARAMETERS ---------
 
 // 6. Write a function `shout` that also returns the passed parameter.
 // Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
-function shout(word) {
-  return word
-}
+
 
 // 7. Which value does `replyResult` have after execution of the following code?
 function reply(phrase) {
@@ -45,13 +36,10 @@ function reply(phrase) {
 
 let replyResult = reply('Good morning')
 // Un comment and assign your answer to the variable `ReplyResultIs`.
-const replyResultIs = 'Good morning'
+// const replyResultIs = 
 
 // 8. Write a function 'helloFriend` to greet a person by name, using a parameter.
 // Calling helloFriend('Emily') should return 'Hello Emily!'
-function helloFriend(name) {
-  return 'Hello ' + name + '!'
-}
 
 // 9. Which value does `goodMorningResult` have after execution of the following code?
 function goodMorning(name) {
@@ -60,7 +48,7 @@ function goodMorning(name) {
 
 let goodMorningResult = goodMorning('Jacky')
 // Un comment and assign your answer to the variable `goodMorningResultIs`.
-const goodMorningResultIs = 'Good morning Jacky!'
+//const goodMorningResultIs = 
 
 // 10. Which value does `hiResult` have after execution of the following code?
 function hi(name) {
@@ -72,14 +60,9 @@ let hi2 = hi('Hamish')
 
 let hiResult = hi1 + ' ' + hi2
 // Un comment and assign your answer to the variable `hiResultIs`.
-const hiResultIs = 'Hi Andy! Hi Hamish!'
+//const hiResultIs = 
 
-// 11. Write a function `alert` that takes a string and returns this string duplicated. In addition, the return should be logged.
-function alert(str) {
-  const alerting = str + ' ' + str
-  console.log(alerting)
-  return alerting
-}
+// 11. Write a function `alert` that takes a string and returns this string duplicated with a space between each string. In addition, the return should be logged to the console.
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
@@ -97,6 +80,7 @@ const toExport = {
 }
 if (typeof sayHi !== 'undefined') toExport.sayHi = sayHi
 if (typeof sayBye !== 'undefined') toExport.sayBye = sayBye
+if (typeof salutation !== 'undefined') toExport.salutation = salutation
 if (typeof helloResultIs !== 'undefined') toExport.helloResultIs = helloResultIs
 if (typeof replyResultIs !== 'undefined') toExport.replyResultIs = replyResultIs
 if (typeof goodMorningResultIs !== 'undefined') toExport.goodMorningResultIs = goodMorningResultIs

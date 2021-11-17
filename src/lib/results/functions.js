@@ -4,6 +4,7 @@ function resultsForFunctions ({
   sayHi,
   sayBye,
   greet,
+  salutation,
   helloResultIs,
   shout,
   replyResultIs,
@@ -12,11 +13,29 @@ function resultsForFunctions ({
   hiResultIs,
   alert
 }) {
+  const greetResult = buildFunctionResult(greet, [], 'Hey there!')
+  if (greetResult.correct && salutation !== 'Hey there!') {
+    greetResult.correct = false
+    greetResult.response = salutation
+    greetResult.tip = "So close, don't forget to assign the result to salutation"
+  }
+
+  const oldConsole = console.log
+  let logResult
+  console.log = str => { logResult = str }
+  const alertResult = buildFunctionResult(alert, ['Fire'], 'Fire Fire')
+  console.log = oldConsole
+  if (alertResult.correct && logResult !== 'Fire Fire') {
+    alertResult.correct = false
+    alertResult.response = logResult
+    alertResult.tip = "Nearly, don't forget to call console.log with the result"
+  }
+
   return [
     buildFunctionResult(hello, [], 'Hello world!'),
     buildFunctionResult(sayHi, [], 'Hello!'),
     buildFunctionResult(sayBye, [], 'Goodbye!'),
-    buildFunctionResult(greet, [], 'Hey there!'),
+    greetResult,
     {
       correct: helloResultIs === 'Hi!',
       response: helloResultIs,
@@ -39,7 +58,7 @@ function resultsForFunctions ({
       response: hiResultIs,
       tip: hiResultIs !== undefined ? ' - Nearly, try reading through it again' : ''
     },
-    buildFunctionResult(alert, ['Fire'], 'Fire Fire')
+    alertResult
   ]
 }
 
