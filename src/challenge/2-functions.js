@@ -2,7 +2,6 @@
 
 // 1. return the string 'Hello world!' from the hello function
 function hello() {
-  return 'Hello world!'
 }
 
 // 2. + 3. Define two functions.
