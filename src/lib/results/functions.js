@@ -1,5 +1,5 @@
 const { buildFunctionResult } = require('../')
-function resultsForFunctions({
+function resultsForFunctions ({
   hello,
   sayHi,
   sayBye,
@@ -13,7 +13,7 @@ function resultsForFunctions({
   alert
 }) {
   return [
-    buildFunctionResult(hello, [], 'Hello world!'), 
+    buildFunctionResult(hello, [], 'Hello world!'),
     buildFunctionResult(sayHi, [], 'Hello!'),
     buildFunctionResult(sayBye, [], 'Goodbye!'),
     buildFunctionResult(greet, [], 'Hey there!'),
