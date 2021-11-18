@@ -1,4 +1,4 @@
-const { buildFunctionResult } = require('../')
+const { buildFunctionResult, buildMultipleFunctionResult } = require('../')
 function resultsForFunctions ({
   hello,
   sayHi,
@@ -41,7 +41,10 @@ function resultsForFunctions ({
       response: helloResultIs,
       tip: helloResultIs !== undefined ? '- Nearly, try reading through it again' : ''
     },
-    buildFunctionResult(shout, ['Echo'], 'Echo'),
+    buildMultipleFunctionResult(shout, [
+      [['Echo'], 'Echo'],
+      [['Word'], 'Word']
+    ]),
     {
       correct: replyResultIs === 'Good morning',
       response: replyResultIs,

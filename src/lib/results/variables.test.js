@@ -16,7 +16,7 @@ describe('1. resultsForVariables', () => {
     expect(result.correct).toBe(true)
   })
   it('3. picks correct value', () => {
-    const result = resultsForVariables({ value: 'Marama' })[2]
+    const result = resultsForVariables({ value: 'Wiremu' })[2]
     expect(result.correct).toBe(true)
   })
 })

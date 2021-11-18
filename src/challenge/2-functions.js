@@ -60,6 +60,7 @@ let hiResult = hi1 + ' ' + hi2
 
 // 11. Write a function `warn` that takes a string and returns this string duplicated with a space between each string. In addition, the return should be logged to the console.
 
+
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
 // don't worry about this yet you'll learn it in bootcamp.

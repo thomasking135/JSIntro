@@ -58,8 +58,9 @@ function formatResult ({ correct, response, tip }) {
   if (!tip) tip = ''
   return `<li class="${correct ? 'tick' : 'cross'}">
     ${response}
+    </li>
     ${correct ? '' : tip}
-    </li>`
+    `
 }
 module.exports = {
   buildFunctionResult,
