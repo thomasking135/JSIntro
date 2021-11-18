@@ -3,12 +3,19 @@
 // If the two values match, the string 'Match' should be returned.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
+function isMatch() {
+
+}
 
 //  -- if, else --
 // Write a function `isAMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned. 
 // If they are not a match, you should get 'Not a match'.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
+
+function isAMatch() {
+
+}
 
 
 //  -- if, else if, else --
@@ -17,6 +24,10 @@
 // If the string strictly equals 'English' the string 'Hello' should be returned. 
 // Otherwise return a '👋'
 // Example: greetings('Te Reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
+
+function greetings() {
+
+}
 
 
 // -- switch statement --
@@ -33,28 +44,8 @@
 // chooseGreetingLanguage('Samoan') returns 'Talofa'
 // chooseGreetingLanguage('Tagalog') returns 'Kamusta'
 // Anything else passed in will return '👋'
+function chooseGreetingLanguage(langauge) {
 
-function chooseGreetingLanguage(language) {
-  switch(language) {
-    case 'Te Reo':
-      return 'Kia ora'
-    case 'English':
-      return 'Hello'
-    case 'Spanish':
-      return 'Hola'
-    case 'French':
-      return 'Bonjour'
-    case 'Dutch':
-      return 'Hallo'
-    case 'Mandarin':
-      return 'Nǐ hǎo'
-    case 'Samoan':
-      return 'Talofa'
-    case 'Tagalog':
-      return 'Kamusta'
-      default:
-        return '👋'
-  }
 }
 
 //  -- ternary  --
@@ -63,7 +54,6 @@ function chooseGreetingLanguage(language) {
 // Example: isSignedIn(false) should return the value 'Sign in'.
 
 function isSignedIn(isSignedIn) {
-  return (isSignedIn ? 'Log out' : 'Sign in')
 }
 
 // ------------ CHECKS -----------
