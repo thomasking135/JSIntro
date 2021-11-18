@@ -5,7 +5,6 @@
 // Example: add(2, 1) will return 3.
 // Example: add(8, 2) will return 10.
 function add (num1, num2) {
-  return num1 + num2
 }
 
 //  -- - minus --
@@ -13,7 +12,6 @@ function add (num1, num2) {
 // Example: minus(2, 1) will return 1, 
 // Example: minus(8, 2) will return 6.
 function minus (num1, num2) {
-  return num1 - num2
 }
 
 //  -- * multiply --
@@ -21,7 +19,6 @@ function minus (num1, num2) {
 // Example: multiply(3, 2) will return 6.
 // Example: multiply(9, 2) will return 18.
 function multiply (num1, num2) {
-  return num1 * num2
 }
 
 //  -- / divide --
@@ -29,23 +26,22 @@ function multiply (num1, num2) {
 // Example: divide(6, 2) will return 3.
 // Example: divide(15, 3) will return 5.
 function divide (num1, num2) {
-  return num1 * num2
 }
 
 //  -- ++ increment --
 // Write a function `increment` that takes a variable and increases the value of the variable and returns the result.
 // Example: increment(22) will return 23. 
 // Example; increment(34) will return 35.
+// Tip : research the difference between num++ and ++num
 function increment (num) {
-  return num++
 }
 
 //  -- -- decrememnt --
 // Write a function `decrement` that takes a variable and decreases the value of the variable and returns the result.
 // Example: decrement(6) will return 5. 
 // Example: decrement(15) will return 14.
+// Tip : research the difference between num-- and --num
 function decrement (num) {
-  return num--
 }
 
 //  -- && and --
@@ -53,13 +49,16 @@ function decrement (num) {
 // Return the first and second parameter.
 // Example: isSame(true, true) will return true.
 // Example: isSame(true, false) will return false.
-function isSame (bool1, bool2) {
-  return bool1 && bool2
+function and (bool1, bool2) {
 }
 
 //  -- || or --
+function or(bool1, bool2) {
+}
 
 //  -- ! not --
+function not(bool){
+}
 
 // ----- Comparison Operators -----
 
@@ -69,7 +68,6 @@ function isSame (bool1, bool2) {
 // Example: isGreaterThan(12, 10) should return true.
 // Example: isGreaterThan(12, 24) should return false.
 function isGreaterThan (num1, num2) {
-  return num1 > num2
 }
 
 //  -- < less than --
@@ -77,54 +75,49 @@ function isGreaterThan (num1, num2) {
 // Example: isLessThan(63, 102) should return true.
 // Example: isLessThan(63, 60) should return false.
 function isLessThan (num1, num2) {
-  return num1 < num2
 }
 
-//  -- > = greater than or equal to --
+//  -- >= greater than or equal to --
 // Write a function `isGreaterOrEqual` that takes two parameters and checks if the first parameter is greater than the second.
 // Example: isGreaterOrEqual(12, 12) should return true, isGreaterOrEqual(14, 12) should return true.
 // Example: isGreaterOrEqual(12, 24) should return false.
 function isGreaterOrEqual (num1, num2) {
-  return num1 >= num2
 }
 
-//  -- < = less than or equal to --
+//  -- <= less than or equal to --
 // Write a function `isLessOrEqual` that takes two parameters and checks if the first parameter is greater than the second.
 // Example: isLessOrEqual(10, 10) should return true, isLessOrEqual(8, 10) should return true.
 // Example: isLessOrEqual(123, 24) should return false.
 function isLessOrEqual (num1, num2) {
-  return num1 <= num2
 }
 
 
-//   -- = = equal to --
+//   -- == equal to --
 // Write a function `isSimilar` that takes two parameters and checks the two values for equality.
 // Example: isSimilar(10, '10') should return true.
 // Example: isSimilar(10, '14') should return false.
 
 function isSimilar (num, stringNum) {
-  return num == stringNum
 }
 
-// = = = equal value and equal type
-// Write a function `isPassword` that takes two parameters and checks the two values for strict equality.
-// Example: isPassword('passW0rd', 'passW0rd') should return true. 
-// Example: isPassword('password', 'passW0rd') should return false.
+// === equal value and equal type
+// Write a function `isSameTypeAndVal` that takes two parameters and checks the two values for strict equality.
+// Example: isSameTypeAndVal('1', 1) should return false. 
+// Example: isSameTypeAndVal('password', 'passW0rd') should return false.
 
-function isPassword (formPassword, storedPassword) {
-  return formPassword === storedPassword
+function isSameTypeAndVal (formPassword, storedPassword) {
 }
 
-//  -- ! = not equal --
-// Write a function `isNotOldPassword` that takes two parameters and checks the two values do not equal the same value.
-// Example: isNotOldPassword('password', 'passW0rd') should return true. 
-// Example: isNotOldPassword('password', 'password') should return false.
+//  -- != not equal --
+// Write a function `isNotSimilar` that takes two parameters and checks the two values do not equal the same value.
+// Example: isNotSimilar('1', 1) should return false. 
+// Example: isNotSimilar(1, '2') should return true.
 
-function isNotOldPassword (oldPassword, newPassword) {
+function isNotSimilar (oldPassword, newPassword) {
   return oldPassword != newPassword
 }
 
-//  -- ! = = not equal value or type --
+//  -- !== not equal value or type --
 // Write a function `isNotSameTypeOrVal` that takes two parameters and checks the two values do not equal the same value or type.
 // Example: isNotSameTypeOrVal(234, '123') should return true - because (it is true) they ARE NOT same value or the same data type.
 // Example: isNotSameTypeOrVal(123, '123') should return false - because (it is false that) they are the same value.
@@ -145,14 +138,16 @@ module.exports = {
   divide,
   increment,
   decrement,
-  isSame,
+  and,
+  or,
+  not,
   isGreaterThan,
   isLessThan,
   isGreaterOrEqual,
   isLessOrEqual,
   isSimilar,
-  isPassword,
-  isNotOldPassword,
+  isSameTypeAndVal,
+  isNotSimilar
   isNotSameTypeOrVal
 }
 

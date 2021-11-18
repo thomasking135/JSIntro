@@ -30,6 +30,16 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
   }
 }
 
+function buildMultipleFunctionResult (fn, calls) {
+  let result
+  for (const params of calls) {
+    const [inputs, returnVal] = params
+    result = buildFunctionResult(fn, inputs, returnVal)
+    if (!result.correct) return result
+  }
+  return result
+}
+
 function formatResultsSection (title, results) {
   const output = `<div class='results'>
     <h2>${title}</h2>
@@ -51,4 +61,8 @@ function formatResult ({ correct, response, tip }) {
     ${correct ? '' : tip}
     </li>`
 }
-module.exports = { buildFunctionResult, formatResultsSection }
+module.exports = {
+  buildFunctionResult,
+  buildMultipleFunctionResult,
+  formatResultsSection
+}
