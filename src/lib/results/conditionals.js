@@ -18,10 +18,10 @@ function resultsForConditionals ({
 function isMatchResult (fn) {
   let result = buildFunctionResult(fn, [1, 2], undefined, 'Should return undefined when inputs are not equal')
   if (result.correct) {
-    result = buildFunctionResult(fn, [2, 2], 'Match')
+    result = buildFunctionResult(fn, [1, '1'], undefined, "Don't forget to use strict equality")
   }
   if (result.correct) {
-    result = buildFunctionResult(fn, [1, '1'], undefined, "Don't forget to use strict equality")
+    result = buildFunctionResult(fn, [2, 2], 'Match')
   }
   return result
 }

@@ -3,7 +3,6 @@
 // The property `address` and the value '123 Main St'.
 // The property `phone` and the value '021 555 555'.
 
-
 // From the object `receipt` access the name property and set that as the value of 'customer'.
 // Make sure you access the objects property, do not just type the string name.
 const receipt = {

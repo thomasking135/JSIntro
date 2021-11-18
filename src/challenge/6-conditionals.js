@@ -4,7 +4,6 @@
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
 function isMatch() {
-
 }
 
 //  -- if, else --
@@ -14,7 +13,6 @@ function isMatch() {
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
 
 function isAMatch() {
-
 }
 
 
@@ -26,7 +24,6 @@ function isAMatch() {
 // Example: greetings('Te Reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
 
 function greetings() {
-
 }
 
 
@@ -44,8 +41,7 @@ function greetings() {
 // chooseGreetingLanguage('Samoan') returns 'Talofa'
 // chooseGreetingLanguage('Tagalog') returns 'Kamusta'
 // Anything else passed in will return '👋'
-function chooseGreetingLanguage(langauge) {
-
+function chooseGreetingLanguage(language) {
 }
 
 //  -- ternary  --

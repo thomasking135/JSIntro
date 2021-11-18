@@ -105,7 +105,7 @@ function isSimilar (num, stringNum) {
 // Example: isSameTypeAndVal('1', 1) should return false. 
 // Example: isSameTypeAndVal('password', 'passW0rd') should return false.
 
-function isSameTypeAndVal (formPassword, storedPassword) {
+function isSameTypeAndVal (stringOrNum1, stringOrNum2) {
 }
 
 //  -- != not equal --
@@ -113,7 +113,7 @@ function isSameTypeAndVal (formPassword, storedPassword) {
 // Example: isNotSimilar('1', 1) should return false. 
 // Example: isNotSimilar(1, '2') should return true.
 
-function isNotSimilar (oldPassword, newPassword) {
+function isNotSimilar (stringOrNum1, stringOrNum2) {
 }
 
 //  -- !== not equal value or type --

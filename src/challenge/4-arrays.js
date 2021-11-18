@@ -13,7 +13,6 @@ const trees = ['Kahikatea', 'Cherry Blossom', 'Paogo']
 const favouriteBrowsers = ['Chrome', 'Firefox']
 // Write your code below this comment
 
-
 // -- arr length --
 // Write some code that gets the length of the array `names` and set that code to be the value of  the variable `arrLength`
 const names = ['Yuko', 'Amanda', 'Kahu']

@@ -3,11 +3,6 @@
 // It should loop for the length of the array and console.log the name at current position. 
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
 // logNames(['Arnav', 'Akira']) would console.log each person's name. 2 names in total.
-function logNames (names) {
-  for (let i = 0; i <= names.length; i++) {
-    console.log(names[i])
-  }
-}
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
@@ -15,7 +10,6 @@ function logNames (names) {
 
 // Don't change any code below this comment!
 const toExport = {
-  
 }
 if (typeof logNames !== 'undefined') toExport.logNames = logNames
 module.exports = toExport
