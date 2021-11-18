@@ -1,13 +1,8 @@
 //  -- if --
 // Write a function `isMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned.
-// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) won't return.
+// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
-function isMatch (one, two) {
-  if (one === two) {
-    return 'Match'
-  }
-}
 
 //  -- if, else --
 // Write a function `isAMatch` that checks two values for strict equality. 
@@ -16,14 +11,6 @@ function isMatch (one, two) {
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
 
 
-function isAMatch (one, two) {
-  if (one === two) {
-    return 'Match'
-  } else {
-    return 'Not a match'
-  }
-}
-
 //  -- if, else if, else --
 // Write a function `greetings` that takes a string. 
 // If the string strictly equals 'Te Reo' the string 'Kia ora' should be returned. 
@@ -31,24 +18,21 @@ function isAMatch (one, two) {
 // Otherwise return a '👋'
 // Example: greetings('Te Reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
 
-function greetings (str) {
-  if (str === 'Te Reo') {
-    return 'Kia ora'
-  } else if (str === 'English') {
-    return 'Hello'
-  } else return '👋'
-}
 
 // -- switch statement --
 // Write a Function `chooseGreetingLanguage`that takes a string.
-// If the string matches a case it should return, otherwise return the default.
-// Example: chooseGreetingLanguage('Dutch') returns 'Hallo'
+// If the string matches a known case it should return, otherwise return the default.
+// use a switch statement (no if / else)
+// Example: 
 // chooseGreetingLanguage('Te Reo') returns 'Kia ora'
-// chooseGreetingLanguage('Tagalog') returns 'Kamusta'
-// chooseGreetingLanguage('Mandarin') returns 'Ni hao'
+// chooseGreetingLanguage('English') returns 'Hello'
+// chooseGreetingLanguage('Spanish') returns 'Hola'
 // chooseGreetingLanguage('French') returns 'Bonjour'
+// chooseGreetingLanguage('Dutch') returns 'Hallo'
+// chooseGreetingLanguage('Mandarin') returns 'Ni hao'
+// chooseGreetingLanguage('Samoan') returns 'Talofa'
+// chooseGreetingLanguage('Tagalog') returns 'Kamusta'
 // Anything else passed in will return '👋'
-// Got to have a lot of options for our switch statement! 
 
 function chooseGreetingLanguage(language) {
   switch(language) {

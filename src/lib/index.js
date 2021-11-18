@@ -1,4 +1,4 @@
-function buildFunctionResult (fn, inputs, expected) {
+function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
   if (!fn) {
     return {
       correct: false,
@@ -21,7 +21,7 @@ function buildFunctionResult (fn, inputs, expected) {
     tip = e
   }
   if (actual !== expected) {
-    tip = `Expected: ${expected}`
+    tip = noMatchTip || `Expected: ${expected}`
   }
   return {
     correct: actual === expected,

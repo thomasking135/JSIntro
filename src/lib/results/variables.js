@@ -1,4 +1,4 @@
-function resultsForVariables({ welcome, name, value }) {
+function resultsForVariables ({ welcome, name, value }) {
   return [
     {
       correct: welcome === 'Hello world',
@@ -6,7 +6,7 @@ function resultsForVariables({ welcome, name, value }) {
       tip: welcome !== undefined ? 'tip goes here' : ''
     },
     {
-      correct: typeof name === 'string' && name != 'Old Name',
+      correct: typeof name === 'string' && name !== 'Old Name',
       response: name,
       tip: name !== 'Old Name' ? 'tip goes here' : ''
     },
@@ -14,7 +14,7 @@ function resultsForVariables({ welcome, name, value }) {
       correct: value === 'Marama',
       response: value,
       tip: value !== undefined ? '- Nearly, try reading through it again' : ''
-    },
+    }
   ]
 }
 
