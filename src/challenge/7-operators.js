@@ -114,7 +114,6 @@ function isSameTypeAndVal (formPassword, storedPassword) {
 // Example: isNotSimilar(1, '2') should return true.
 
 function isNotSimilar (oldPassword, newPassword) {
-  return oldPassword != newPassword
 }
 
 //  -- !== not equal value or type --
@@ -123,7 +122,6 @@ function isNotSimilar (oldPassword, newPassword) {
 // Example: isNotSameTypeOrVal(123, '123') should return false - because (it is false that) they are the same value.
 // Example: isNotSameTypeOrVal(234, 123) should return false - because (it is false that) they are the same data type.
 function isNotSameTypeOrVal (one, two) {
-  return one !== two
 }
 
 // ------------ CHECKS -----------
@@ -147,7 +145,7 @@ module.exports = {
   isLessOrEqual,
   isSimilar,
   isSameTypeAndVal,
-  isNotSimilar
+  isNotSimilar,
   isNotSameTypeOrVal
 }
 

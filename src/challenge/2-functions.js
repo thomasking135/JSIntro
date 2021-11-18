@@ -9,10 +9,7 @@ function hello() {
 
 // 4. Define a function `greet` that returns 'Hey there!'
 // Then declare a variable `salutation` and call the function `greet`, set the result of the function to the variable.
-function greet() {
-  return 'Hey there!'
-}
-const salutation = greet()
+
 
 // 5. What value does `helloResult` have?
 function hi() {
@@ -27,7 +24,6 @@ let helloResult = hi()
 
 // 6. Write a function `shout` that also returns the passed parameter.
 // Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
-
 
 // 7. Which value does `replyResult` have after execution of the following code?
 function reply(phrase) {
@@ -62,7 +58,7 @@ let hiResult = hi1 + ' ' + hi2
 // Un comment and assign your answer to the variable `hiResultIs`.
 //const hiResultIs = 
 
-// 11. Write a function `alert` that takes a string and returns this string duplicated with a space between each string. In addition, the return should be logged to the console.
+// 11. Write a function `warn` that takes a string and returns this string duplicated with a space between each string. In addition, the return should be logged to the console.
 
 // ------------ CHECKS -----------
 // The below line of code lets us test it to see how you're doing,
@@ -71,18 +67,18 @@ let hiResult = hi1 + ' ' + hi2
 // Don't change any code below this comment!
 const toExport = {
   hello,
-  greet,
-  shout,
   reply,
-  helloFriend,
   goodMorning,
-  alert
 }
 if (typeof sayHi !== 'undefined') toExport.sayHi = sayHi
 if (typeof sayBye !== 'undefined') toExport.sayBye = sayBye
+if (typeof greet !== 'undefined') toExport.greet = greet
 if (typeof salutation !== 'undefined') toExport.salutation = salutation
+if (typeof shout !== 'undefined') toExport.shout = shout
+if (typeof helloFriend !== 'undefined') toExport.helloFriend = helloFriend
 if (typeof helloResultIs !== 'undefined') toExport.helloResultIs = helloResultIs
 if (typeof replyResultIs !== 'undefined') toExport.replyResultIs = replyResultIs
 if (typeof goodMorningResultIs !== 'undefined') toExport.goodMorningResultIs = goodMorningResultIs
 if (typeof hiResultIs !== 'undefined') toExport.hiResultIs = hiResultIs
+if (typeof warn !== 'undefined') toExport.warn = warn
 module.exports = toExport

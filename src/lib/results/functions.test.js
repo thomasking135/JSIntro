@@ -65,17 +65,17 @@ describe('2. resultsForFunctions', () => {
     const result = resultsForFunctions({ hiResultIs })[9]
     expect(result.correct).toBe(true)
   })
-  it('11. alert(name) returns `name name` and console logs result', () => {
-    const alert = (str) => `${str} ${str}`
-    let result = resultsForFunctions({ alert })[10]
+  it('11. warn(name) returns `name name` and console logs result', () => {
+    const warn = (str) => `${str} ${str}`
+    let result = resultsForFunctions({ warn })[10]
     expect(result.correct).toBe(false)
     expect(result.tip).toMatch(/Nearly/)
 
     const alertWithConsole = (str) => {
-      console.log(alert(str))
-      return alert(str)
+      console.log(warn(str))
+      return warn(str)
     }
-    result = resultsForFunctions({ alert: alertWithConsole })[10]
+    result = resultsForFunctions({ warn: alertWithConsole })[10]
     expect(result.correct).toBe(true)
   })
 })

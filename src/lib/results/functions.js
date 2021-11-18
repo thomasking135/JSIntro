@@ -11,7 +11,7 @@ function resultsForFunctions ({
   helloFriend,
   goodMorningResultIs,
   hiResultIs,
-  alert
+  warn
 }) {
   const greetResult = buildFunctionResult(greet, [], 'Hey there!')
   if (greetResult.correct && salutation !== 'Hey there!') {
@@ -23,12 +23,12 @@ function resultsForFunctions ({
   const oldConsole = console.log
   let logResult
   console.log = str => { logResult = str }
-  const alertResult = buildFunctionResult(alert, ['Fire'], 'Fire Fire')
+  const warnResult = buildFunctionResult(warn, ['Fire'], 'Fire Fire')
   console.log = oldConsole
-  if (alertResult.correct && logResult !== 'Fire Fire') {
-    alertResult.correct = false
-    alertResult.response = logResult
-    alertResult.tip = "Nearly, don't forget to call console.log with the result"
+  if (warnResult.correct && logResult !== 'Fire Fire') {
+    warnResult.correct = false
+    warnResult.response = logResult
+    warnResult.tip = "Nearly, don't forget to call console.log with the result"
   }
 
   return [
@@ -58,7 +58,7 @@ function resultsForFunctions ({
       response: hiResultIs,
       tip: hiResultIs !== undefined ? ' - Nearly, try reading through it again' : ''
     },
-    alertResult
+    warnResult
   ]
 }
 
