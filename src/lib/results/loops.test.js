@@ -1,5 +1,5 @@
 const resultsForLoops = require('./loops')
-describe('5. resultsForLoops', () => {
+describe('7. resultsForLoops', () => {
   it('defaults to incorrect', () => {
     expect.assertions(1)
     const results = resultsForLoops({})
