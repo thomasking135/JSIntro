@@ -35,11 +35,8 @@ function greetings() {
 // chooseGreetingLanguage('Te Reo') returns 'Kia ora'
 // chooseGreetingLanguage('English') returns 'Hello'
 // chooseGreetingLanguage('Spanish') returns 'Hola'
-// chooseGreetingLanguage('French') returns 'Bonjour'
-// chooseGreetingLanguage('Dutch') returns 'Hallo'
-// chooseGreetingLanguage('Mandarin') returns 'Ni hao'
+// chooseGreetingLanguage('Mandarin') returns 'Nǐ hǎo'
 // chooseGreetingLanguage('Samoan') returns 'Talofa'
-// chooseGreetingLanguage('Tagalog') returns 'Kamusta'
 // Anything else passed in will return '👋'
 function chooseGreetingLanguage(language) {
 }

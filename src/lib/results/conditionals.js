@@ -1,4 +1,4 @@
-const { buildFunctionResult } = require('../')
+const { buildMultipleFunctionResult } = require('../')
 function resultsForConditionals ({
   isMatch,
   isAMatch,
@@ -7,54 +7,31 @@ function resultsForConditionals ({
   isSignedIn
 }) {
   return [
-    isMatchResult(isMatch),
-    isAMatchResult(isAMatch),
-    greetingsResult(greetings),
+    buildMultipleFunctionResult(isMatch, [
+      [[1, 2], undefined],
+      [[1, '1'], undefined],
+      [[2, 2], 'Match']
+    ]),
+    buildMultipleFunctionResult(isAMatch, [
+      [[1, 2], 'Not a Match'],
+      [[2, 2], 'Match'],
+      [[1, '1'], 'Not a Match']
+    ]),
+    buildMultipleFunctionResult(greetings, [
+      [['Te Reo'], 'Kia ora'],
+      [['English'], 'Hello'],
+      [[], '👋']
+    ]),
     chooseGreetingLanguageResults(chooseGreetingLanguage),
     isSignedInResult(isSignedIn)
   ]
-}
-
-function isMatchResult (fn) {
-  let result = buildFunctionResult(fn, [1, 2], undefined, 'Should return undefined when inputs are not equal')
-  if (result.correct) {
-    result = buildFunctionResult(fn, [1, '1'], undefined, "Don't forget to use strict equality")
-  }
-  if (result.correct) {
-    result = buildFunctionResult(fn, [2, 2], 'Match')
-  }
-  return result
-}
-
-function isAMatchResult (fn) {
-  let result = buildFunctionResult(fn, [1, 2], 'Not a Match', 'Should return "Not a Match" when inputs are not equal')
-  if (result.correct) {
-    result = buildFunctionResult(fn, [2, 2], 'Match')
-  }
-  if (result.correct) {
-    result = buildFunctionResult(fn, [1, '1'], 'Not a Match', "Don't forget to use strict equality")
-  }
-  return result
-}
-
-function greetingsResult (fn) {
-  let result = buildFunctionResult(fn, ['Te Reo'], 'Kia ora', "Expected 'Kia ora' when input is 'Te Reo'")
-  if (result.correct) {
-    result = buildFunctionResult(fn, ['English'], 'Hello', "Expected 'Hello', when input is 'English'")
-  }
-  if (result.correct) {
-    if (result.correct) {
-      result = buildFunctionResult(fn, [], '👋', "Expected '👋', when input is not 'Te Reo' or 'English'")
-    }
-  }
-  return result
 }
 
 function chooseGreetingLanguageResults (fn) {
   if (!fn) {
     return {
       correct: false,
-      tip: 'chooseGreetingLanguage not defined'
+      tip: '[[chooseGreetingLanguage not defined'
     }
   }
   if (fn.toString().match(/if/)) {
@@ -72,26 +49,16 @@ function chooseGreetingLanguageResults (fn) {
     }
   }
 
-  const answers = {
-    'Te Reo': 'Kia ora',
-    English: 'Hello',
-    Spanish: 'Hola',
-    French: 'Bonjour',
-    Dutch: 'Hallo',
-    Mandarin: 'Nǐ hǎo',
-    Samoan: 'Talofa',
-    Tagalog: 'Kamusta',
-    whatever: '👋'
-  }
+  const inputs = [
+    [['Te Reo'], 'Kia ora'],
+    [['English'], 'Hello'],
+    [['Spanish'], 'Hola'],
+    [['Mandarin'], 'Nǐ hǎo'],
+    [['Samoan'], 'Talofa'],
+    [['whatever'], '👋']
+  ]
 
-  for (const language in answers) {
-    const answer = answers[language]
-    const result = buildFunctionResult(fn, [language], answer, `an input of ${language} should return ${answer}`)
-    if (!result.correct) return result
-  }
-  return {
-    correct: true
-  }
+  return buildMultipleFunctionResult(fn, inputs)
 }
 
 function isSignedInResult (fn) {
@@ -115,10 +82,10 @@ function isSignedInResult (fn) {
       tip: 'must use ternary operator'
     }
   }
-  let result = buildFunctionResult(fn, [true], 'Log out')
-  if (!result.correct) return result
-  result = buildFunctionResult(fn, [false], 'Sign in')
-  return result
+  return buildMultipleFunctionResult(fn, [
+    [[true], 'Log out'],
+    [[false], 'Sign in']
+  ])
 }
 
 module.exports = resultsForConditionals

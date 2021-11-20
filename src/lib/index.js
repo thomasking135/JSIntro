@@ -27,7 +27,7 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
   }
   return {
     correct: actual === expected,
-    response: name ? `${name}(${toArgs(inputs)}) returned ${actual}` : '',
+    response: name ? `${name}(${toArgs(inputs)}) returned ${toArg(actual)}` : '',
     tip
   }
 }

@@ -16,13 +16,11 @@ describe('5. resultsForConditionals', () => {
     isMatch = (a, b) => a != b ? 'Match' : undefined
     result = resultsForConditionals({ isMatch })[0]
     expect(result.correct).toEqual(false)
-    expect(result.tip).toMatch(/Should return undefined/)
 
     // eslint-disable-next-line eqeqeq
     isMatch = (a, b) => a == b ? 'Match' : undefined
     result = resultsForConditionals({ isMatch })[0]
     expect(result.correct).toEqual(false)
-    expect(result.tip).toMatch(/strict equality/)
 
     isMatch = (a, b) => a === b ? 'Match' : undefined
     result = resultsForConditionals({ isMatch })[0]
@@ -38,13 +36,11 @@ describe('5. resultsForConditionals', () => {
     isAMatch = (a, b) => a != b ? 'Match' : 'Not a Match'
     result = resultsForConditionals({ isAMatch })[1]
     expect(result.correct).toEqual(false)
-    expect(result.tip).toMatch(/Should return "Not a Match"/)
 
     // eslint-disable-next-line eqeqeq
     isAMatch = (a, b) => a == b ? 'Match' : 'Not a Match'
     result = resultsForConditionals({ isAMatch })[1]
     expect(result.correct).toEqual(false)
-    expect(result.tip).toMatch(/strict equality/)
 
     isAMatch = (a, b) => a === b ? 'Match' : 'Not a Match'
     result = resultsForConditionals({ isAMatch })[1]
