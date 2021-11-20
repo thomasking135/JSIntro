@@ -1,10 +1,11 @@
 ol li{
   font-size:1em;
+  margin-top: 10px;
 }
 
 .tick{
   background-color: #d9ead3;
-  width: 220px;
+  width: 420px;
 }
 .tick:after {
   content: '\2713';
@@ -15,7 +16,7 @@ ol li{
 
 .cross {
   background-color: #f4cccc;
-  width: 220px;
+  width: 420px;
 }
 
 .cross:after{

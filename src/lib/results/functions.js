@@ -38,7 +38,7 @@ function resultsForFunctions ({
     greetResult,
     {
       correct: helloResultIs === 'Hi!',
-      response: helloResultIs,
+      response: `helloResultIs: ${helloResultIs}`,
       tip: helloResultIs !== undefined ? '- Nearly, try reading through it again' : ''
     },
     buildMultipleFunctionResult(shout, [
@@ -47,18 +47,18 @@ function resultsForFunctions ({
     ]),
     {
       correct: replyResultIs === 'Good morning',
-      response: replyResultIs,
+      response: `replyResultIs ${replyResultIs}`,
       tip: replyResultIs !== undefined ? '- Nearly, try reading through it again' : ''
     },
     buildFunctionResult(helloFriend, ['Emily'], 'Hello Emily!'),
     {
       correct: goodMorningResultIs === 'Good morning Jacky!',
-      response: goodMorningResultIs,
+      response: `goodMorningResultIs ${goodMorningResultIs}`,
       tip: goodMorningResultIs !== undefined ? '- Nearly, try reading through it again' : ''
     },
     {
       correct: hiResultIs === 'Hi Andy! Hi Hamish!',
-      response: hiResultIs,
+      response: `hiResultIs: ${hiResultIs}`,
       tip: hiResultIs !== undefined ? ' - Nearly, try reading through it again' : ''
     },
     warnResult

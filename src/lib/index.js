@@ -12,6 +12,8 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
       tip: 'is not a function'
     }
   }
+  const matches = fn.toString().match(/function\s*(\w*)/)
+  const name = matches[1]
 
   let actual
   let tip
@@ -25,7 +27,7 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
   }
   return {
     correct: actual === expected,
-    response: actual,
+    response: `${name}(${toArgs(inputs)}) returned ${actual}`,
     tip
   }
 }
@@ -61,6 +63,18 @@ function formatResult ({ correct, response, tip }) {
     </li>
     ${correct ? '' : tip}
     `
+}
+
+function toArgs (inputs) {
+  return inputs.map(toArg).join(', ')
+}
+
+function toArg (input) {
+  if (typeof input === 'string') {
+    return `'${input}'`
+  } else {
+    return input
+  }
 }
 module.exports = {
   buildFunctionResult,
