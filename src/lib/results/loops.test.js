@@ -1,13 +1,13 @@
 const resultsForLoops = require('./loops')
 describe('7. resultsForLoops', () => {
   it('defaults to incorrect', () => {
-    expect.assertions(1)
+    expect.assertions(3)
     const results = resultsForLoops({})
     for (const result of results) {
       expect(result.correct).toEqual(false)
     }
   })
-  it('loops over names and calls console.log for each one', () => {
+  it('1. loops over names and calls console.log for each one', () => {
     let logNames = () => {}
     let result = resultsForLoops({ logNames })[0]
     expect(result.correct).toEqual(false)
@@ -26,6 +26,55 @@ describe('7. resultsForLoops', () => {
       names.forEach(name => console.log(name))
     }
     result = resultsForLoops({ logNames })[0]
+    expect(result.correct).toEqual(true)
+  })
+
+  it('2. countShortNames returns correct count', () => {
+    let countShortNames = (items) => items.length
+    let result = resultsForLoops({ countShortNames })[1]
+    expect(result.correct).toEqual(false)
+
+    countShortNames = (items) => {
+      const length = items.filter(i => i.length < 5).length
+      return length
+    }
+    result = resultsForLoops({ countShortNames })[1]
+    expect(result.correct).toEqual(false)
+    expect(result.tip).toMatch(/use for ... of/)
+
+    countShortNames = (items) => {
+      let count = 0
+      for (const item of items) {
+        if (item.length < 5) count++
+      }
+      return count
+    }
+    result = resultsForLoops({ countShortNames })[1]
+    expect(result.correct).toEqual(true)
+  })
+
+  it('3. everySecondItem returns correct items', () => {
+    let everySecondItem = (items) => items
+    let result = resultsForLoops({ everySecondItem })[2]
+    expect(result.correct).toEqual(false)
+
+    everySecondItem = (items) => {
+      return items.filter((i, idx) => idx % 2 === 1)
+    }
+    result = resultsForLoops({ everySecondItem })[2]
+    expect(result.correct).toEqual(false)
+    expect(result.tip).toMatch(/use for ... in/)
+
+    everySecondItem = (items) => {
+      const results = []
+      for (const index in items) {
+        if (index % 2 === 1) {
+          results.push(items[index])
+        }
+      }
+      return results
+    }
+    result = resultsForLoops({ everySecondItem })[2]
     expect(result.correct).toEqual(true)
   })
 })
