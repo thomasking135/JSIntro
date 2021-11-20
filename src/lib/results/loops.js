@@ -23,7 +23,7 @@ function alertResult (logNames) {
   const result = buildFunctionResult(logNames, [['Alice', 'Bob', 'Alan', 'Ada']], undefined)
   console.log = oldConsole
   if (result.correct) {
-    result.response = `Console.log called ${logResults.length} times with ${logResults.join(',')}`
+    result.response = `Console.log called ${logResults.length} times` + (logResults.length > 0 ? `with ${logResults.join(', ')}` : '')
     if (logResults.length === 0) {
       result.correct = false
       result.tip = "Don't forget to call console.log for each name inside the loop"
@@ -71,9 +71,16 @@ function everySecondItemResult (everySecondItem) {
       tip: 'You need to use for ... in'
     }
   }
-  const res = everySecondItem(['sue', 1, 'henry', 'bob', 3, 4])
+  const args = ['sue', 1, 'henry', 'bob', 3, 4]
+  const res = everySecondItem(args)
+  if (!res) {
+    return {
+      correct: false,
+      response: `everySecondItem(${args}) returned undefined`
+    }
+  }
   const result = {
-    response: res.join(',')
+    response: `everySecondItem(${args}) returned ${res.join(',')}`
   }
   if (res.join(',') === '1,bob,4') {
     result.correct = true

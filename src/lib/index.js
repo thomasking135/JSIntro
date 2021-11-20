@@ -72,6 +72,8 @@ function toArgs (inputs) {
 function toArg (input) {
   if (typeof input === 'string') {
     return `'${input}'`
+  } else if (typeof input === 'object' && input.length) {
+    return input.map(i => toArg(i)).join(', ')
   } else {
     return input
   }

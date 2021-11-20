@@ -21,7 +21,6 @@ function printFruit(fruits) {
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
 // logNames(['Arnav', 'Akira']) would console.log each person's name. 2 names in total.
 
-
 /** STRETCH **/
 // the next two challenges can be a bit tricky, remember to ask for help if yo uneed it
 
@@ -31,14 +30,12 @@ function printFruit(fruits) {
 // try using `for of` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
 
-
 // -- for in loop -- 
 // 4. write a function `everySecondItem` that takes an array of items and returns a new array that only includes every second item
 // everySecondItem([1, 'test', 'something', 23, 42, {greeting: 'hi'}]) would return ['test', 23, {greeting: 'hi'}]
 // try using `for in` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 // the remainder (%) operator might also be useful https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
 // Array.push() can help add things to a results array https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
-
 
 
 // ------------ CHECKS -----------
