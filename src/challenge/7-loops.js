@@ -5,14 +5,14 @@ function printResult(fruit) {
 }
 function printFruit(fruits) {
   for(let i = 0; i < fruits.length; i++) {
-    printFruit(fruits[i])
+    printResult(fruits[i])
   }
 }
 
 // if printFruit was called with ['apple', 'orange', 'banana', 'pineapple']
 // how many times would printResult be called?
 // uncomment the following line and save your anser to the `numberPrintResultCalls` variable
-// const numberPrintResultCalls = 
+// const numberPrintResultCalls = 4
 
 
 
