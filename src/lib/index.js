@@ -13,7 +13,7 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
     }
   }
   const matches = fn.toString().match(/function\s*(\w*)/)
-  const name = matches[1]
+  const name = matches ? matches[1] : ''
 
   let actual
   let tip
@@ -27,7 +27,7 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
   }
   return {
     correct: actual === expected,
-    response: `${name}(${toArgs(inputs)}) returned ${actual}`,
+    response: name ? `${name}(${toArgs(inputs)}) returned ${actual}` : '',
     tip
   }
 }
