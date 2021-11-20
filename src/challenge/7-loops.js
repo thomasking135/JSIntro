@@ -16,7 +16,7 @@ function printFruit(fruits) {
 
 
 
-// Write a function `logNames` that takes an array as a parameter. 
+// 2. Write a function `logNames` that takes an array as a parameter. 
 // It should loop for the length of the array and console.log the name at current position. 
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
 // logNames(['Arnav', 'Akira']) would console.log each person's name. 2 names in total.
@@ -26,14 +26,14 @@ function printFruit(fruits) {
 // the next two challenges can be a bit tricky, remember to ask for help if yo uneed it
 
 // -- for of loop --
-// write a function `countShortNames` that takes an array of strings and returns a count of all the strings with a length less than 5
+// 3. write a function `countShortNames` that takes an array of strings and returns a count of all the strings with a length less than 5
 // countShortNames(['Sally', 'John', 'James', 'Alice', 'Sue']) would return 2
 // try using `for of` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
 
 
 // -- for in loop -- 
-// write a function `everySecondItem` that takes an array of items and returns a new array that only includes every second item
+// 4. write a function `everySecondItem` that takes an array of items and returns a new array that only includes every second item
 // everySecondItem([1, 'test', 'something', 23, 42, {greeting: 'hi'}]) would return ['test', 23, {greeting: 'hi'}]
 // try using `for in` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
 // the remainder (%) operator might also be useful https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
