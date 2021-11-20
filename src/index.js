@@ -2,9 +2,9 @@ const variableAnswers = require('./challenge/1-variables')
 const functionAnswers = require('./challenge/2-functions')
 const objectAnswers = require('./challenge/3-objects')
 const arrayAnswers = require('./challenge/4-arrays')
-const loopAnswers = require('./challenge/5-loops')
-const conditionalAnswers = require('./challenge/6-conditionals')
-const operatorAnswers = require('./challenge/7-operators')
+const loopAnswers = require('./challenge/7-loops')
+const conditionalAnswers = require('./challenge/5-conditionals')
+const operatorAnswers = require('./challenge/6-operators')
 
 const { formatResultsSection } = require('./lib')
 const {
@@ -36,8 +36,8 @@ function buildResults () {
   output += formatResultsSection('Functions', functionResults)
   output += formatResultsSection('Objects', objectResults)
   output += formatResultsSection('Arrays', arrayResults)
-  output += formatResultsSection('Loops', loopResults)
   output += formatResultsSection('Conditionals', conditionalResults)
   output += formatResultsSection('Operators', operatorResults)
+  output += formatResultsSection('Loops', loopResults)
   return output
 }

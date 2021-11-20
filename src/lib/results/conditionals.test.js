@@ -1,5 +1,5 @@
 const resultsForConditionals = require('./conditionals')
-describe('6. resultsForConditionals', () => {
+describe('5. resultsForConditionals', () => {
   it('defaults to incorrect', () => {
     expect.assertions(5)
     const results = resultsForConditionals({})

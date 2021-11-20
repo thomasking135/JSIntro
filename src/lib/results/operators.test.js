@@ -1,5 +1,5 @@
 const resultsForOperators = require('./operators')
-describe('7. resultsForOperators', () => {
+describe('6. resultsForOperators', () => {
   it('defaults to incorrect', () => {
     expect.assertions(17)
     const results = resultsForOperators({})
