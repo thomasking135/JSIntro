@@ -1,10 +1,15 @@
 const { buildFunctionResult, buildMultipleFunctionResult } = require('../')
 function resultsForLoops ({
+  numberPrintResultCalls,
   logNames,
   countShortNames,
   everySecondItem
 }) {
   return [
+    {
+      correct: numberPrintResultCalls === 4,
+      response: `numberPrintResultCalls: ${numberPrintResultCalls}`
+    },
     alertResult(logNames),
     countShortNamesResult(countShortNames),
     everySecondItemResult(everySecondItem)

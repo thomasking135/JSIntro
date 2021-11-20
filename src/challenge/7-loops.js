@@ -1,4 +1,21 @@
 // -- for loop --
+// 1. given the following functions
+function printResult(fruit) {
+  console.log('fruit: ' + fruit)
+}
+function printFruit(fruits) {
+  for(let i = 0; i < fruits.length; i++) {
+    printFruit(fruits[i])
+  }
+}
+
+// if printFruit was called with ['apple', 'orange', 'banana', 'pineapple']
+// how many times would printResult be called?
+// uncomment the following line and save your anser to the `numberPrintResultCalls` variable
+// const numberPrintResultCalls = 
+
+
+
 // Write a function `logNames` that takes an array as a parameter. 
 // It should loop for the length of the array and console.log the name at current position. 
 // logNames(['Sally', 'Nikita', 'Arnav', 'Akira']) would console.log each person's name. 4 names in total.
@@ -31,6 +48,7 @@
 // Don't change any code below this comment!
 const toExport = {
 }
+if (typeof numberPrintResultCalls !== 'undefined') toExport.numberPrintResultCalls = numberPrintResultCalls
 if (typeof logNames !== 'undefined') toExport.logNames = logNames
 if (typeof countShortNames !== 'undefined') toExport.countShortNames = countShortNames
 if (typeof everySecondItem !== 'undefined') toExport.everySecondItem = everySecondItem
