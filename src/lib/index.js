@@ -33,12 +33,15 @@ function buildFunctionResult (fn, inputs, expected, noMatchTip = '') {
 }
 
 function buildMultipleFunctionResult (fn, calls) {
+  let responses = ''
   let result
   for (const params of calls) {
     const [inputs, returnVal] = params
     result = buildFunctionResult(fn, inputs, returnVal)
+    responses += result.response + '<br/>'
     if (!result.correct) return result
   }
+  result.response = responses
   return result
 }
 
