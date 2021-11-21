@@ -1,36 +1,31 @@
-//  -- if --
+// 1. if statement
 // Write a function `isMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
-function isMatch() {
-}
 
-//  -- if, else --
+
+// 2. if, else statement
 // Write a function `isAMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned. 
 // If they are not a match, you should get 'Not a match'.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
 
-function isAMatch() {
-}
 
 
-//  -- if, else if, else --
+// 3. if, else if, else statement
 // Write a function `greetings` that takes a string. 
 // If the string strictly equals 'Te Reo' the string 'Kia ora' should be returned. 
 // If the string strictly equals 'English' the string 'Hello' should be returned. 
 // Otherwise return a '👋'
 // Example: greetings('Te Reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
 
-function greetings() {
-}
 
 
-// -- switch statement --
+// 4. switch statement
 // Write a Function `chooseGreetingLanguage`that takes a string.
 // If the string matches a known case it should return, otherwise return the default.
-// use a switch statement (no if / else)
+// Use a switch statement (no if / else)
 // Example: 
 // chooseGreetingLanguage('Te Reo') returns 'Kia ora'
 // chooseGreetingLanguage('English') returns 'Hello'
@@ -38,26 +33,26 @@ function greetings() {
 // chooseGreetingLanguage('Mandarin') returns 'Nǐ hǎo'
 // chooseGreetingLanguage('Samoan') returns 'Talofa'
 // Anything else passed in will return '👋'
-function chooseGreetingLanguage(language) {
-}
 
-//  -- ternary  --
+
+
+// 5. ternary
 // Write a function `isSignedIn` that checks if isMember is truthy.
 // Example: isSignedIn(true) should return the value 'Log out'.
 // Example: isSignedIn(false) should return the value 'Sign in'.
 
-function isSignedIn(isSignedIn) {
-}
+
 
 // ------------ CHECKS -----------
-// The below line of code lets us test it to see how you're doing,
+// The below lines of code lets us test it to see how you're doing,
 // don't worry about this yet you'll learn it in Bootcamp. 
 
 // Don't change any code below this comment!
-module.exports = { 
-  isMatch,
-  isAMatch,
-  greetings,
-  chooseGreetingLanguage,
-  isSignedIn
- }
+const toExport = {
+}
+if (typeof isMatch !== 'undefined') toExport.isMatch = isMatch
+if (typeof isAMatch !== 'undefined') toExport.isAMatch = isAMatch
+if (typeof greetings !== 'undefined') toExport.greetings = greetings
+if (typeof chooseGreetingLanguage !== 'undefined') toExport.chooseGreetingLanguage = chooseGreetingLanguage
+if (typeof isSignedIn !== 'undefined') toExport.isSignedIn = isSignedIn
+module.exports = toExport
