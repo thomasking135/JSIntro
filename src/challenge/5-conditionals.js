@@ -1,5 +1,5 @@
 // 1. if statement
-// Write a function `isMatch` that checks two values for strict equality. 
+// Write a function `isMatch` that checks two values for "strict equality". Hint: Look up the term "strict equality" if you are not sure.
 // If the two values match, the string 'Match' should be returned.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
@@ -26,7 +26,7 @@
 // Write a Function `chooseGreetingLanguage`that takes a string.
 // If the string matches a known case it should return, otherwise return the default.
 // Use a switch statement (no if / else)
-// Example: 
+// Examples: 
 // chooseGreetingLanguage('Te Reo') returns 'Kia ora'
 // chooseGreetingLanguage('English') returns 'Hello'
 // chooseGreetingLanguage('Spanish') returns 'Hola'

@@ -1,6 +1,6 @@
 // ------------ FUNCTIONS -----------
 
-// 1. return the string 'Hello world!' from the hello function
+// 1. Return the string 'Hello world!' from the hello function
 function hello() {
 
 }
@@ -26,8 +26,8 @@ let helloResult = hi()
 
 // ---------- FUNCTIONS WITH PARAMETERS ---------
 
-// 6. Write a function `shout` that also returns the passed parameter.
-// Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
+// 6. Write a function `shout` that takes a parameter and returns it.
+// Example: Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
 
 
 
@@ -54,10 +54,10 @@ let goodMorningResult = goodMorning('Jacky')
 // Un comment and assign your answer to the variable `goodMorningResultIs`.
 const goodMorningResultIs =
 
-  // 10. Which value does `hiResult` have after execution of the following code?
-  function hi(name) {
-    return 'Hi ' + name + '!'
-  }
+// 10. Which value does `hiResult` have after execution of the following code?
+function hi(name) {
+  return 'Hi ' + name + '!'
+}
 
 let hi1 = hi('Andy')
 let hi2 = hi('Hamish')
@@ -66,7 +66,8 @@ let hiResult = hi1 + ' ' + hi2
 // Un comment and assign your answer to the variable `hiResultIs`.
 // const hiResultIs =
 
-// 11. Write a function `warn` that takes a string and returns this string duplicated with a space between each string. In addition, the return should be logged to the console.
+// 11. Write a function called `warn` that takes a parameter (it will be a string) and returns the string parameter duplicated, with a space between each string.
+// In addition, the value that will be returned should be logged to the console before being returned.
 
 
 

@@ -3,7 +3,7 @@
 
 
 // 2. Assign the variable `treeResult` with the code that accesses the first value from the array `trees`.
-// Example: The code should work even if you change the values in the array. It should always retrieve the first element.
+// Example: The code should work even if you were to change the values in the array. It should always retrieve the first element.
 const trees = ['Kahikatea', 'Cherry Blossom', 'Paogo']
 // Write your code below this comment
 

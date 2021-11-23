@@ -1,4 +1,4 @@
-// 1. given the following functions
+// 1. Given the following functions:
 function printResult(fruit) {
   console.log('fruit: ' + fruit)
 }
@@ -8,9 +8,9 @@ function printFruit(fruits) {
     printResult(fruits[i])
   }
 }
-// if printFruit was called with ['apple', 'orange', 'banana', 'pineapple']
-// how many times would printResult be called?
-// uncomment the following line and save your answer to the `numberPrintResultCalls` variable
+// If printFruit was called with ['apple', 'orange', 'banana', 'pineapple']
+// How many times would printResult be called?
+// Uncomment the following line and save your answer to the `numberPrintResultCalls` variable
 // const numberPrintResultCalls = 
 
 // 2. Write a function `logNames` that takes an array as a parameter. 
@@ -22,15 +22,15 @@ function printFruit(fruits) {
 /** STRETCH **/
 // the next two challenges can be a bit tricky, remember to ask for help if you need it
 
-// 3. write a function `countShortNames` that takes an array of strings and returns a count of all the strings with a length less than 5
+// 3. Write a function `countShortNames` that takes an array of strings and returns a count of all the strings with a length less than 5
 // countShortNames(['Sally', 'John', 'James', 'Alice', 'Sue']) would return 2
-// try using `for of` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
+// Try using `for of` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...of
 
 
-// 4. write a function `everySecondItem` that takes an array of items and returns a new array that only includes every second item
+// 4. Write a function `everySecondItem` that takes an array of items and returns a new array that only includes every second item
 // everySecondItem([1, 'test', 'something', 23, 42, {greeting: 'hi'}]) would return ['test', 23, {greeting: 'hi'}]
-// try using `for in` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
-// the remainder (%) operator might also be useful https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
+// Try using `for in` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/for...in
+// The remainder (%) operator might also be useful https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Remainder
 // Array.push() can help add things to a results array https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push
 
 
