@@ -5,8 +5,8 @@
 
 
 
-// 2. From the object `receipt` access the name property and set that as the value of 'customer'.
-// Make sure you access the objects property, do not just type the string name.
+// 2. From the object `receipt` access the name property and set that as the value of a variable named 'customer'.
+// Make sure you access the object's property, do not just type the string name.
 const receipt = {
   price: 89.99,
   store: 'Ariels Diner',
