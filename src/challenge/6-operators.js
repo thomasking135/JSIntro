@@ -51,7 +51,7 @@ function decrement(num) {
 }
 
 // 7. and
-// Write a function `add` that takes two booleans as parameters.
+// Write a function `and` that takes two booleans as parameters.
 // Return the first and second parameter.
 // Example: add(true, true) will return true.
 // Example: add(true, false) will return false.
