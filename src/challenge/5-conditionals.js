@@ -9,7 +9,7 @@
 // Write a function `isAMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned. 
 // If they are not a match, you should get 'Not a Match'.
-// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a match'.
+// Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a Match'.
 
 
 
