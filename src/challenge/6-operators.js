@@ -45,7 +45,7 @@ function increment(num) {
 // Write a function `decrement` that takes a variable and decreases the value of the variable and returns the result.
 // Example: decrement(6) will return 5. 
 // Example: decrement(15) will return 14.
-// Tip : research the difference between num-- and --num
+// Tip: research the difference between num-- and --num
 function decrement(num) {
 
 }
@@ -53,8 +53,8 @@ function decrement(num) {
 // 7. and
 // Write a function `and` that takes two booleans as parameters.
 // Return the first and second parameter.
-// Example: add(true, true) will return true.
-// Example: add(true, false) will return false.
+// Example: and(true, true) will return true.
+// Example: and(true, false) will return false.
 function and(bool1, bool2) {
 
 }
@@ -63,8 +63,8 @@ function and(bool1, bool2) {
 // Write a function `or` that takes two booleans as parameters.
 // If either of the two parameters are true, return true.
 // If neither are true it should return false.
-// Example: add(true, false) will return true.
-// Example: add(false false) will return false.
+// Example: or(true, false) will return true.
+// Example: or(false false) will return false.
 function or(bool1, bool2) {
 
 }
