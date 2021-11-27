@@ -114,7 +114,7 @@ function isGreaterOrEqual(num1, num2) {
 // Example: isLessOrEqual(10, 10) should return true, isLessOrEqual(8, 10) should return true.
 // Example: isLessOrEqual(123, 24) should return false.
 function isLessOrEqual(num1, num2) {
-  retu
+  return 
 }
 
 
