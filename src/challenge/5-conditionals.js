@@ -12,6 +12,9 @@ function isMatch (a, b) {
 
 }
 
+isAMatch(1, 1) 
+isAMatch(1, 2) 
+
 // 2. if, else statement
 // Write a function `isAMatch` that checks two values for strict equality. 
 // If the two values match, the string 'Match' should be returned. 
@@ -26,6 +29,8 @@ function isAMatch (a, b) {
     }
 }
 
+isAMatch(1, 1) 
+isAMatch(1, 2) 
 
 // 3. if, else if, else statement
 // Write a function `greetings` that takes a string. 
@@ -80,6 +85,13 @@ function chooseGreetingLanguage(word) {
         }
     }
 
+    chooseGreetingLanguage('Te Reo') 
+    chooseGreetingLanguage('English') 
+    chooseGreetingLanguage('Spanish')
+    chooseGreetingLanguage('Mandarin') 
+    chooseGreetingLanguage('Samoan') 
+    chooseGreetingLanguage('Italian')
+
 // 5. ternary
 // Write a function `isSignedIn` that checks if isMember is truthy.
 // Example: isSignedIn(true) should return the value 'Log out'.
@@ -88,6 +100,9 @@ function chooseGreetingLanguage(word) {
 function isSignedIn (isMember) {
     return (isMember ? 'Log out': 'Sign in')
 }
+
+isSignedIn(true)
+isSignedIn(false) 
 
 // ------------ CHECKS -----------
 // The below lines of code lets us test it to see how you're doing,
