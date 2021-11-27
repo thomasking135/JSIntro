@@ -5,7 +5,7 @@
 // Example: add(2, 1) will return 3.
 // Example: add(8, 2) will return 10.
 function add(num1, num2) {
-
+    return num1 + num2
 }
 
 // 2. minus
@@ -13,7 +13,7 @@ function add(num1, num2) {
 // Example: minus(2, 1) will return 1, 
 // Example: minus(8, 2) will return 6.
 function minus(num1, num2) {
-
+  return num1 - num2
 }
 
 // 3. multiply 
@@ -21,7 +21,7 @@ function minus(num1, num2) {
 // Example: multiply(3, 2) will return 6.
 // Example: multiply(9, 2) will return 18.
 function multiply(num1, num2) {
-
+  return num1 * num2
 }
 
 // 4. divide
@@ -29,7 +29,7 @@ function multiply(num1, num2) {
 // Example: divide(6, 2) will return 3.
 // Example: divide(15, 3) will return 5.
 function divide(num1, num2) {
-
+  return num1 / num2
 }
 
 // 5. increment
@@ -38,7 +38,7 @@ function divide(num1, num2) {
 // Example: increment(34) will return 35.
 // Tip : research the difference between num++ and ++num
 function increment(num) {
-
+  return ++num
 }
 
 // 6. decrement
@@ -47,7 +47,7 @@ function increment(num) {
 // Example: decrement(15) will return 14.
 // Tip: research the difference between num-- and --num
 function decrement(num) {
-
+  return --num
 }
 
 // 7. and
@@ -56,7 +56,7 @@ function decrement(num) {
 // Example: and(true, true) will return true.
 // Example: and(true, false) will return false.
 function and(bool1, bool2) {
-
+  return bool1, bool2
 }
 
 // 8. or
@@ -66,7 +66,11 @@ function and(bool1, bool2) {
 // Example: or(true, false) will return true.
 // Example: or(false false) will return false.
 function or(bool1, bool2) {
-
+  if (bool1 === bool2){
+    return true
+  } else{
+    return false
+  }
 }
 
 // 9. not
@@ -75,7 +79,7 @@ function or(bool1, bool2) {
 // Example: not(false) will return true.
 // Example: not(true) will return false.
 function not(bool) {
-
+  return !bool
 }
 
 // ----- Comparison Operators -----
@@ -86,7 +90,7 @@ function not(bool) {
 // Example: isGreaterThan(12, 10) should return true.
 // Example: isGreaterThan(12, 24) should return false.
 function isGreaterThan(num1, num2) {
-
+  return num1 > num2
 }
 
 // 11. less than
@@ -94,7 +98,7 @@ function isGreaterThan(num1, num2) {
 // Example: isLessThan(63, 102) should return true.
 // Example: isLessThan(63, 60) should return false.
 function isLessThan(num1, num2) {
-
+  return num1 < num2
 }
 
 // 12. greater than or equal to
@@ -102,7 +106,7 @@ function isLessThan(num1, num2) {
 // Example: isGreaterOrEqual(12, 12) should return true, isGreaterOrEqual(14, 12) should return true.
 // Example: isGreaterOrEqual(12, 24) should return false.
 function isGreaterOrEqual(num1, num2) {
-
+  return num1 >= num2
 }
 
 // 13. less than or equal to
