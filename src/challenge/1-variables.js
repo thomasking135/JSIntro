@@ -1,8 +1,8 @@
 // 1. Declare a variable called `welcome`, assign the value 'Hello world'
-
+let welcome = 'Hello world'
 
 // 2. Reassign the variable `name` to have the value of your name.   
-let name = 'Old Name'
+let name = 'Thomas'
 
 
 // 3. Which value does `nameOne` have after execution of the following code?
@@ -12,7 +12,7 @@ let nameThree = nameTwo
 nameTwo = nameOne
 nameOne = nameThree
 // Uncomment the following line and assign your answer to the variable `value`.
-// const value = 
+const value = 'Wiremu'
 
 // ------------ CHECKS -----------
 // The below lines of code lets us test it to see how you're doing,

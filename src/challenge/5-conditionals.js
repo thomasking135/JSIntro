@@ -3,7 +3,14 @@
 // If the two values match, the string 'Match' should be returned.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) will return nothing.
 
+function isMatch (a, b) {
+    if ( a === b) {
+        return 'Match';
+    }else{
+        return 
+    } 
 
+}
 
 // 2. if, else statement
 // Write a function `isAMatch` that checks two values for strict equality. 
@@ -11,6 +18,13 @@
 // If they are not a match, you should get 'Not a Match'.
 // Example: isAMatch(1, 1) should return 'Match' and isAMatch(1, 2) should return 'Not a Match'.
 
+function isAMatch (a, b) {
+    if (a === b) {
+        return 'Match'
+    }else{
+        return 'Not a match'
+    }
+}
 
 
 // 3. if, else if, else statement
@@ -20,6 +34,15 @@
 // Otherwise return a '👋'
 // Example: greetings('Te Reo') should return 'Kia ora' and greetings('Dutch') should return '👋'.
 
+function greetings (differentGreet){
+    if (differentGreet === 'Te Reo'){
+        return 'Kia ora'
+    }else if(differentGreet === 'English'){
+        return 'Hello' 
+    }else {
+        return '👋'
+    }
+}
 
 
 // 4. switch statement
@@ -35,13 +58,36 @@
 // Anything else passed in will return '👋'
 
 
+function chooseGreetingLanguage(word) {
+    switch(word) {
+        case "Te Reo" :
+            return 'Kia ora';
+            break;
+        case "English" :
+            return 'Hello';
+            break;
+        case "Spanish" :
+            return 'Hola'
+            break;
+        case "Mandarin" :
+            return 'Nǐ hǎo';
+            break;
+        case "Samoan" :
+            return 'Talofa';
+            break;
+        default:
+            return '👋'
+        }
+    }
 
 // 5. ternary
 // Write a function `isSignedIn` that checks if isMember is truthy.
 // Example: isSignedIn(true) should return the value 'Log out'.
 // Example: isSignedIn(false) should return the value 'Sign in'.
 
-
+function isSignedIn (isMember) {
+    return (isMember ? 'Log out': 'Sign in')
+}
 
 // ------------ CHECKS -----------
 // The below lines of code lets us test it to see how you're doing,

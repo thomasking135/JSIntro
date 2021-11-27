@@ -2,18 +2,28 @@
 
 // 1. Return the string 'Hello world!' from the hello function
 function hello() {
-
+  return "Hello world!" 
 }
 
 // 2. + 3. Define two functions.
 // The first function `sayHi` should return 'Hello!' and the second function `sayBye` should return 'Goodbye!'.
 
+function sayHi () {
+  return "Hello!"
+}
 
+function sayBye () {
+  return "Goodbye!"
+}
 
 // 4. Define a function `greet` that returns 'Hey there!'
 // Then declare a variable `salutation` and call the function `greet`, set the result of the function to the variable.
 
+function greet (num) {
+  return "Hey there!"
+}
 
+let salutation = greet()
 
 // 5. What value does `helloResult` have?
 function hi() {
@@ -22,14 +32,19 @@ function hi() {
 
 let helloResult = hi()
 // Un comment and assign your answer to the variable `helloResultIs`.
-// const helloResultIs =
+const helloResultIs = 'Hi!'
 
 // ---------- FUNCTIONS WITH PARAMETERS ---------
 
 // 6. Write a function `shout` that takes a parameter and returns it.
 // Example: Calling shout('Echo') should return 'Echo' and shout('Hello') should return 'Hello'
 
+function shout (param) {
+  return param
+}
 
+shout("Echo")
+shout("Hello")
 
 // 7. Which value does `replyResult` have after execution of the following code?
 function reply(phrase) {
@@ -37,13 +52,16 @@ function reply(phrase) {
 }
 
 let replyResult = reply('Good morning')
+
 // Un comment and assign your answer to the variable `ReplyResultIs`.
-// const replyResultIs =
+const replyResultIs = 'Good morning'
 
 // 8. Write a function 'helloFriend` to greet a person by name, using a parameter.
 // Calling helloFriend('Emily') should return 'Hello Emily!'
 
-
+function hellowFriend(name){
+  return 'Hello ' + name + '!'
+}
 
 // 9. Which value does `goodMorningResult` have after execution of the following code?
 function goodMorning(name) {
@@ -52,7 +70,7 @@ function goodMorning(name) {
 
 let goodMorningResult = goodMorning('Jacky')
 // Un comment and assign your answer to the variable `goodMorningResultIs`.
-const goodMorningResultIs =
+const goodMorningResultIs = 'Good morning ' + 'Jacky' + '!'
 
 // 10. Which value does `hiResult` have after execution of the following code?
 function hi(name) {
@@ -64,12 +82,17 @@ let hi2 = hi('Hamish')
 
 let hiResult = hi1 + ' ' + hi2
 // Un comment and assign your answer to the variable `hiResultIs`.
-// const hiResultIs =
+const hiResultIs = 'Hi Andy! Hi Hamish!'
 
 // 11. Write a function called `warn` that takes a parameter (it will be a string) and returns the string parameter duplicated, with a space between each string.
 // In addition, the value that will be returned should be logged to the console before being returned.
 
+function warn (warning){
+  console.loh(warning + ' ' + warning)
+  return warning + ' ' + warning
+}
 
+warn('Fire')
 
 // ------------ CHECKS -----------
 // The below lines of code lets us test it to see how you're doing,

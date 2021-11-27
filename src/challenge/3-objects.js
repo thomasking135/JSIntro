@@ -3,6 +3,11 @@
 // The property `address` and the value '123 Main St'.
 // The property `phone` and the value '021 555 555'.
 
+const contact = {
+  name: 'Leon Kim',
+  address: '123 Main St',
+  phone: 021555555
+}
 
 
 // 2. From the object `receipt` access the name property and set that as the value of a variable named 'customer'.
@@ -13,6 +18,9 @@ const receipt = {
   name: 'Marta'
 }
 
+let customer = receipt.name
+console.log(receipt.name)
+
 
 // 3. Access the `name` property in the `person` object and reassign the value to be a different name (Perhaps your name?).
 const person = {
@@ -20,6 +28,9 @@ const person = {
   age: '28',
   eyeColor: 'brown'
 }
+
+console.log(person.name)
+person.name = 'Thomas'
 
 
 // ------------ CHECKS -----------
