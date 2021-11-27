@@ -123,7 +123,7 @@ function isLessOrEqual(num1, num2) {
 // Example: isSimilar(10, '10') should return true.
 // Example: isSimilar(10, '14') should return false.
 function isSimilar(num, stringNum) {
-
+  
 }
 
 // 15. equal value and equal type
